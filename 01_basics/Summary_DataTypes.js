@@ -36,8 +36,29 @@ let myObj ={
 }
 
 const myFunction = function(){
-    console.log("Hello World");
+ //   console.log("Hello World");
 }
+
+
+// Memory Management
+
+
+// Stack - (Primitive)   Heap - Non Primitive DataTypes
+let myYouTubeName = "itsrsingh";
+let anothername = myYouTubeName;
+anothername = "chaiOrCode"
+console.log(anothername);
+console.log(myYouTubeName); // No Change Beacuse there is the memory from Heap and it use the only reference
+
+let user = {
+    email:"user@google.com",
+    upi:"user@ypl"
+}
+
+let user2 = user
+user2.email = "rohit@gmail.com"
+console.log(user.email)
+console.log(user2.email) // Here Change the Value of user and user2 it means that the value is change in the memory
 
 
 
