@@ -17,4 +17,3 @@ console.log(newDate.getMonth()+1);
 console.log(newDate.getDate);
 let today = new Date();
 console.log(`Today the Date and Day is ${today.toDateString()}`);
-
