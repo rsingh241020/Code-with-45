@@ -59,7 +59,3 @@ let user2 = user
 user2.email = "rohit@gmail.com"
 console.log(user.email)
 console.log(user2.email) // Here Change the Value of user and user2 it means that the value is change in the memory
-
-
-
-
