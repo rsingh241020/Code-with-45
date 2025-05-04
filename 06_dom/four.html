@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai and Code</title>
+</head>
+
+<body style= "background-color:#212121;color: #fff;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+
+<script>
+    function add_Language(lang_name){
+       const li = document.createElement('li')
+       li.innerHTML = `${lang_name}`
+       document.querySelector('.language').appendChild(li)
+    }
+    add_Language("python")
+    add_Language("java")
+    add_Language("Typescript")
+
+    function addOptiLang(lang_name){
+       const li = document.createElement('li')
+       li.appendChild(document.createTextNode(lang_name))
+       document.querySelector('.language').appendChild(li)
+    }
+    addOptiLang('golang')
+
+    //Edit 
+    const seclang=document.querySelector("li:nth-child(2)")
+    //seclang.innerHTML ="Mojo"
+    const newli = document.createElement('li')
+    newli.textContent="Mojo"
+    seclang.replaceWith(newli)
+
+    //edit
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML ='<li>C#<li>'
+
+    //remove 
+    const lastlang = document.querySelector('li:last-child')
+    lastlang.remove()
+</script>
+</html>
