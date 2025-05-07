@@ -1,13 +1,3 @@
-# Project Related DOM
-## Project Link
-
-
-[click here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=1-colorChanger%2Fchaiaurcode.js)
-
-## Solution Code
-
-## project 1
-```JavaScript
 Console.log("Rohit)
 
 const buttons = document.querySelectorAll('.button')
@@ -32,5 +22,3 @@ button.addEventListener('click',function(e){
         }
 })
 });
-
-```
